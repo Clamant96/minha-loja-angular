@@ -1,3 +1,4 @@
+import { UsuarioLogin } from './../model/UsuarioLogin';
 import { Observable } from 'rxjs';
 import { Usuario } from './../model/Usuario';
 import { HttpClient } from '@angular/common/http';
@@ -30,6 +31,11 @@ export class UsuarioService {
   postUsuario(usuario: Usuario): Observable<Usuario> {
 
     return this.http.post<Usuario>(`${this.url}/usuario`, usuario);
+  }
+
+  login(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
+
+    return this.http.post<UsuarioLogin>(`${this.url}/usuario/login`, usuarioLogin);
   }
 
   putUsuario(usuario: Usuario): Observable<Usuario> {

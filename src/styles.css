@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+html, body {
+  font-family: var(--font-montiserrat);
+
+  background-color: var(--background-color-page);
+
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-montiserrat: 'Montserrat', sans-serif;
+
+  --background-color-page: #f1f1f1;
+  --background-color-page2: #f9f9f9;
+  --background-color-balao: #2626260b;
+  --background-color-black: #262626;
+  --background-color-orange: #ffab0d;
+
+  --text-color-orange: #ffab0d;
+  --text-color-write: #f9f9f9;
+  --text-color-black: #262626;
+
+  --box-shadow: #262626;
+
+  --border-style-search: #e8e8e8;
+  --border-style-input: #262626;
+
+  --background-color-gray: #f8f8f8;
+  --background-color-gray-hover: #d3d3d3;
+
+  --img-banner-login: url("assets/img/img-login.png");
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color-orange);
+
+}

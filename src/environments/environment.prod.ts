@@ -8,7 +8,7 @@ export const environment = {
 	listaPedidos: [],
 	totalCarrinho: 0,
 	img: "",
-  apiUrl: "",
+  apiUrl: "http://localhost:8080",
   isLogado: false
 
 };

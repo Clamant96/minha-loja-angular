@@ -1,0 +1,35 @@
+<section class="section-login">
+  <div class="container-section">
+
+    <div class="lista-categoria">
+
+    </div>
+
+    <div class="dados-usuario">
+
+      <h1>Login</h1>
+      <div class="bloco-formulario">
+        <label for="usuario">Usuário</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuarioLogin.username' type="text" name="usuario" id="usuario" placeholder="Usuário">
+      </div>
+      <div class="bloco-formulario">
+          <label for="senha">Senha</label>
+          <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+          <input [(ngModel)]='usuarioLogin.senha' type="password" name="senha" id="senha" placeholder="Senha">
+      </div>
+      <div class="botoes">
+          <!-- (click) ==> CHAMA UM METODO PARA REALIZAR O LOGIN DENTRO DA APLICACAO, VALIDANDO OS DADOS INSERIDOS -->
+          <button type="submit" (click)='logar()'>Entrar</button>
+      </div>
+
+      <div class="hr">
+        <hr />
+      </div>
+
+      <p class="link">Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a></p>
+
+    </div>
+
+  </div>
+</section>

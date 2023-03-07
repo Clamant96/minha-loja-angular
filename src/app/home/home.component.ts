@@ -85,6 +85,14 @@ export class HomeComponent implements OnInit {
     return retorno;
   }
 
+  renderizarPreco(preco: number) {
+    let retorno: string = preco.toString();
+
+    retorno = retorno.replace('.', ',');
+
+    return retorno;
+  }
+
   comprarProduto(produto: Produto) {
     this.produtoService.comprarProduto(produto.id, this.id).subscribe((resp: Produto) => {
 

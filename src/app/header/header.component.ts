@@ -119,4 +119,12 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  renderizarPreco(preco: number) {
+    let retorno: string = preco.toString();
+
+    retorno = retorno.replace('.', ',');
+
+    return retorno;
+  }
+
 }

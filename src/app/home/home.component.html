@@ -9,7 +9,7 @@
 
       <div *ngIf="produto.id != this.gerenciaProdutoEdcao.id" class="dados-produto">
         <p>{{this.renderizaTexto(produto.nome)}}</p>
-        <h3>R$ {{produto.preco}}</h3>
+        <h3>R$ {{this.renderizarPreco(produto.preco)}}</h3>
         <strong>À vista no PIX</strong>
       </div>
 

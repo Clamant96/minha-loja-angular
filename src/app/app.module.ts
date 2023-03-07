@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 
 import { OrderModule } from 'ngx-order-pipe';
 import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

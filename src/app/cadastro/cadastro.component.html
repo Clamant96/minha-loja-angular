@@ -1,0 +1,54 @@
+<section class="section-cadastro">
+  <div class="container-section">
+
+    <div class="lista-categoria">
+
+    </div>
+
+    <div class="dados-usuario">
+
+      <h1>Cadastro</h1>
+      <div class="bloco-formulario">
+        <label for="nome">Nome</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuario.senha' type="text" name="nome" id="nome" placeholder="Nome">
+      </div>
+      <div class="bloco-formulario">
+        <label for="usuario">Usuário</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuario.username' type="text" name="usuario" id="usuario" placeholder="Usuário">
+      </div>
+      <div class="bloco-formulario">
+        <label for="email">E-mail</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuario.senha' type="email" name="email" id="email" placeholder="E-mail">
+      </div>
+      <div class="bloco-formulario">
+        <label for="img">img</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuario.senha' type="text" name="img" id="img" placeholder="Img perfil">
+      </div>
+      <div class="bloco-formulario">
+        <label for="senha">Senha</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input (input)='confirmeSenha($event)' type="password" name="senha" id="senha" placeholder="Senha">
+      </div>
+      <div class="bloco-formulario">
+        <label for="confirmar-senha">Confirmar Senha</label>
+        <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
+        <input [(ngModel)]='usuario.senha' type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirmar Senha">
+      </div>
+      <div class="botoes">
+          <button type="submit" (click)='cadastro()'>Entrar</button>
+      </div>
+
+      <div class="hr">
+        <hr />
+      </div>
+
+      <p class="link">Já tem um login? <a routerLink="/login">Logar-se</a></p>
+
+    </div>
+
+  </div>
+</section>

@@ -1,3 +1,5 @@
+import { UsuarioService } from './../service/usuario.service';
+import { Usuario } from './../model/Usuario';
 import { Router } from '@angular/router';
 import { Produto } from './../model/Produto';
 import { ProdutoService } from './../service/produto.service';
@@ -14,8 +16,11 @@ export class HomeComponent implements OnInit {
   public listaDeProdutos: Produto[] = [];
   public id: number = environment.id;
 
+  public carrinho: Usuario = new Usuario();
+
   constructor(
     private produtoService: ProdutoService,
+    private usuarioService: UsuarioService,
     private router: Router
 
   ) { }
@@ -60,6 +65,19 @@ export class HomeComponent implements OnInit {
 
   comprarProduto(produto: Produto) {
     this.produtoService.comprarProduto(produto.id, this.id).subscribe((resp: Produto) => {
+
+      setTimeout(() => {
+
+        this.usuarioService.getByIdUsuario(this.id).subscribe((resp: Usuario) => {
+
+          this.carrinho = resp;
+
+        });
+
+      }, 50);
+
+    }, erro => {
+      alert('Ocorreu um erro ao tentar comprar o produto.');
 
     });
 

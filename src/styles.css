@@ -24,13 +24,17 @@ html, body {
 
   --background-color-page: #f1f1f1;
   --background-color-page2: #f9f9f9;
+  --background-color-page3: #ffffff;
   --background-color-balao: #2626260b;
   --background-color-black: #262626;
   --background-color-orange: #ffab0d;
+  --background-color-orange-hover: rgb(255, 101, 0);
 
   --text-color-orange: #ffab0d;
   --text-color-write: #f9f9f9;
   --text-color-black: #262626;
+  --text-color-pix: rgb(127, 133, 141);
+  --text-color-botao-white: #ffffff;
 
   --box-shadow: #262626;
 

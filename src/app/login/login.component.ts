@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
       /* ARMAZENA O TOKEN DO USUARIO NO LOCAL STORAGE */
       localStorage.setItem('logado', `${environment.isLogado}`);
 
-      alert('Login realizado com sucesso');
+      this.router.navigate(['/home']);
 
     }, erro => {
       if(erro.status == 500) {

@@ -55,6 +55,20 @@ section .lista-produtos .bloco .img {
 
 }
 
+section .lista-produtos .bloco .novo-produto {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  padding: 10%;
+
+  width: 50%;
+  height: 25vh;
+
+  filter: opacity(25%);
+
+}
+
 section .lista-produtos .bloco .dados-produto {
   padding: 3%;
 
@@ -114,6 +128,60 @@ section .lista-produtos .bloco .dados-produto strong {
 
 }
 
+section .lista-produtos .bloco .dados-produto label {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+  margin-top: 0.5rem;
+
+  color: var(--text-color-black);
+
+}
+
+section .lista-produtos .bloco .dados-produto input {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+  margin-top: 0.5rem;
+
+  color: var(--text-color-black);
+
+  border: none;
+
+  padding: 2% 0%;
+
+  width: 100%;
+  height: auto;
+
+  outline: none;
+
+}
+
+section .lista-produtos .bloco .dados-produto select {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+  margin-top: 0.5rem;
+
+  color: var(--text-color-black);
+
+  border: none;
+
+  padding: 2% 0%;
+
+  width: 100%;
+  height: auto;
+
+  outline: none;
+
+}
+
 section .lista-produtos .bloco .botao {
   display: flex;
   align-items: center;
@@ -131,6 +199,8 @@ section .lista-produtos .bloco .botao .button {
 
   padding: 3%;
   margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
 
   width: 94%;
   height: auto;
@@ -179,5 +249,48 @@ section .lista-produtos .bloco .botao .button .img svg {
   height: auto;
 
   color: var(--text-color-botao-white);
+
+}
+
+
+section .lista-produtos .bloco .botao .editar-produto {
+  cursor: pointer;
+
+  background-color: var(--background-color-black);
+
+  padding: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+
+  width: 15%;
+  height: 5vh;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color, 0.2s ease-in-out;
+
+}
+
+section .lista-produtos .bloco .botao .editar-produto .img {
+  padding: 0%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .lista-produtos .bloco .botao .editar-produto .img svg {
+  width: 100%;
+  height: auto;
+
+  color: var(--text-color-orange);
 
 }

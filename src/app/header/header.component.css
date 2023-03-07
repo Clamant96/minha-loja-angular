@@ -135,6 +135,8 @@ header nav a .dropdown {
 
   display: none;
 
+  z-index: 1 !important;
+
 }
 
 header nav a .dropdown .carrinho {

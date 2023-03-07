@@ -120,9 +120,16 @@ export class HeaderComponent implements OnInit {
   }
 
   renderizarPreco(preco: number) {
-    let retorno: string = preco.toString();
+    let retorno: string = "";
 
-    retorno = retorno.replace('.', ',');
+    try {
+      retorno = preco.toString();
+
+      retorno = retorno.replace('.', ',');
+
+    }catch(err) {
+
+    }
 
     return retorno;
   }

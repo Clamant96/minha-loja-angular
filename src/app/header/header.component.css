@@ -131,7 +131,7 @@ header nav a .dropdown {
 
   border: 1px solid var(--border-style-search);
 
-  overflow-x: scroll;
+  overflow-y: scroll;
 
   display: none;
 
@@ -240,5 +240,35 @@ header nav a .dropdown strong {
   justify-content: flex-end;
 
   border-top: 1px solid var(--border-style-search);
+
+}
+
+header nav a .dropdown .editar-perfil-usuario {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+  padding: 2%;
+
+  width: 100%;
+  height: auto;
+
+  color: var(--text-color-write);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid var(--border-style-search);
+
+  background-color: var(--background-color-orange);
+
+  transition: background-color, 0.2s ease-in-out;
+
+}
+
+header nav a .dropdown .editar-perfil-usuario:hover {
+  background-color: var(--background-color-orange-hover);
 
 }

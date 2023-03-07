@@ -1,4 +1,4 @@
-<section class="section-cadastro">
+<section class="section-atualizar">
   <div class="container-section">
 
     <div class="lista-categoria">
@@ -7,7 +7,7 @@
 
     <div class="dados-usuario">
 
-      <h1>Cadastro</h1>
+      <h1>Atualizar</h1>
       <div class="bloco-formulario">
         <label for="nome">Nome</label>
         <!-- [(ngModel)] ==> AMAZENA OS DADOS INSERIDOS PELO USUARIO DENTRO DA MODEL -->
@@ -39,14 +39,8 @@
         <input [(ngModel)]='usuario.senha' type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirmar Senha">
       </div>
       <div class="botoes">
-          <button type="submit" (click)='cadastro()'>Cadastrar</button>
+          <button type="submit" (click)='atualizar()'>Atualizar</button>
       </div>
-
-      <div class="hr">
-        <hr />
-      </div>
-
-      <p class="link">Já tem um login? <a routerLink="/login">Logar-se</a></p>
 
     </div>
 

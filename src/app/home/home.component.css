@@ -8,6 +8,193 @@ section {
   align-items: center;
   justify-content: center;
 
+  position: relative;
+
+}
+
+section .categoria {
+  position: absolute;
+
+  margin: 0.6%;
+
+  width: 13%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  top: 0;
+  left: 0;
+
+}
+
+section .categoria .bloco-categoria {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--background-color-page3);
+
+  border-radius: 5px;
+  border: 1px solid var(--border-style-search);
+
+  box-shadow: 0px 1px 3px -2px var(--box-shadow);
+
+}
+
+section .categoria .bloco-categoria .dados-produto {
+  padding: 3%;
+
+  width: 94%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .categoria .bloco-categoria .dados-produto input {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+  margin-top: 0.5rem;
+
+  color: var(--text-color-black);
+
+  border: none;
+
+  padding: 2% 0%;
+
+  width: 100%;
+  height: auto;
+
+  outline: none;
+
+}
+
+section .categoria .bloco-categoria .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+
+}
+
+section .categoria .bloco-categoria .botao .button {
+  cursor: pointer;
+
+  background-color: var(--background-color-orange);
+
+  padding: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  width: 94%;
+  height: auto;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color, 0.2s ease-in-out;
+
+}
+
+section .categoria .bloco-categoria .botao .button:hover {
+  background-color: var(--background-color-orange-hover);
+
+}
+
+section .categoria .bloco-categoria .botao .button p {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-montiserrat);
+
+  color: var(--text-color-botao-white);
+
+  margin: 0;
+  margin-left: 5%;
+
+}
+
+section .categoria .bloco-categoria .botao .button .img {
+  padding: 0%;
+
+  width: 10%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .categoria .bloco-categoria .botao .button .img svg {
+  width: 100%;
+  height: auto;
+
+  color: var(--text-color-botao-white);
+
+}
+
+
+section .categoria .bloco-categoria .botao .editar-produto {
+  cursor: pointer;
+
+  background-color: var(--background-color-black);
+
+  padding: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+
+  width: 15%;
+  height: 5vh;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color, 0.2s ease-in-out;
+
+}
+
+section .categoria .bloco-categoria .botao .editar-produto .img {
+  padding: 0%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .categoria .bloco-categoria .botao .editar-produto .img svg {
+  width: 100%;
+  height: auto;
+
+  color: var(--text-color-orange);
+
 }
 
 section .lista-produtos {

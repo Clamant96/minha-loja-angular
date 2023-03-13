@@ -1,5 +1,18 @@
-<app-header [carrinho]="this.carrinho"></app-header>
+<app-header [carrinho]="this.carrinho" [totalDeItensCarrinho]="this.totalDeItensCarrinho"></app-header>
 <section>
+  <div class="categoria">
+    <div class="bloco-categoria">
+      <div class="dados-produto">
+        <input [(ngModel)]='this.categoria.nome' type="text" name="nome" id="nome" placeholder="Nome da categoria" />
+      </div>
+      <div class="botao" (click)="this.cadastrarCategoria(this.categoria)">
+        <div class="button">
+          <p>Cadastrar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="lista-produtos">
     <div class="bloco" *ngFor="let produto of this.listaDeProdutos">
 

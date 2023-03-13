@@ -14,12 +14,13 @@ import { environment } from 'src/environments/environment.prod';
 export class HeaderComponent implements OnInit {
 
   @Input() carrinho: Usuario;
+  @Input() totalDeItensCarrinho: number;
 
   public img: string = environment.img;
   public nome: string = environment.nome;
   public id: number = environment.id;
 
-  public totalDeItensCarrinho: number = 0;
+  //public totalDeItensCarrinho: number = 0;
 
   public gerenciaDropdown: boolean = false;
 

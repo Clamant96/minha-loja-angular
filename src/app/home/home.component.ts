@@ -25,7 +25,11 @@ export class HomeComponent implements OnInit {
   public gerenciaProdutoEdcao: Produto = new Produto();
   public gerenciaCategoria: Categoria = new Categoria();
 
+  public categoria: Categoria = new Categoria();
+
   public isEdicaoProduto: boolean = false;
+
+  public totalDeItensCarrinho: number = 0;
 
   constructor(
     private produtoService: ProdutoService,
@@ -102,6 +106,8 @@ export class HomeComponent implements OnInit {
 
           this.carrinho = resp;
 
+          this.totalDeItensCarrinho = this.calculaQtdItensCarrinho(this.carrinho);
+
         });
 
       }, 50);
@@ -175,6 +181,35 @@ export class HomeComponent implements OnInit {
 
     });
 
+  }
+
+  cadastrarCategoria(categoria: Categoria) {
+
+    this.categoriaService.postCategoria(categoria).subscribe((resp: Categoria) => {
+
+      this.categoria = new Categoria();
+
+      this.getAllCategorias();
+
+      alert('Categoria cadastrada com sucesso!');
+
+    }, erro => {
+      alert('Ocorreu um erro ao tentar cadastrar a categoria.');
+
+    });
+
+  }
+
+  calculaQtdItensCarrinho(carrinho: Usuario) {
+
+    let retorno: number = 0;
+
+    carrinho.listaPedidos.map((produto) => {
+      retorno = retorno + produto.qtdPedidoProduto;
+
+    });
+
+    return retorno;
   }
 
 }

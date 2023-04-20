@@ -13,6 +13,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { UsuarioComponent } from './editar/usuario/usuario.component';
+import { ImagemComponent } from './upload/imagem/imagem.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UsuarioComponent } from './editar/usuario/usuario.component';
     CadastroComponent,
     HomeComponent,
     HeaderComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ImagemComponent
   ],
   imports: [
     BrowserModule,

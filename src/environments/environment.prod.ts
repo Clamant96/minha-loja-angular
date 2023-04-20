@@ -9,6 +9,7 @@ export const environment = {
 	totalCarrinho: 0,
 	img: "",
   apiUrl: "http://localhost:8080",
-  isLogado: false
+  isLogado: false,
+  nomeUplaodImagem: ""
 
 };

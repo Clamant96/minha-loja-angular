@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   public listaDeProdutos: Produto[] = [];
   public listaDeCategorias: Categoria[] = [];
   public id: number = environment.id;
+  public username: string = environment.username;
 
   public carrinho: Usuario = new Usuario();
 
@@ -30,6 +31,8 @@ export class HomeComponent implements OnInit {
   public isEdicaoProduto: boolean = false;
 
   public totalDeItensCarrinho: number = 0;
+
+  public url: string = `${environment.apiUrl}`;
 
   constructor(
     private produtoService: ProdutoService,
@@ -163,6 +166,12 @@ export class HomeComponent implements OnInit {
 
   atualizarProduto(produto: Produto) {
 
+    if(environment.nomeUplaodImagem == "" || environment.nomeUplaodImagem == null || environment.nomeUplaodImagem == undefined) {
+      environment.nomeUplaodImagem = produto.img;
+
+    }
+
+
     this.produtoService.putProduto(produto).subscribe((resp: Produto) => {
       this.gerenciaProduto = new Produto();
       this.gerenciaProdutoEdcao = new Produto();
@@ -210,6 +219,20 @@ export class HomeComponent implements OnInit {
     });
 
     return retorno;
+  }
+
+  carregaImagem(username: string, img: string) {
+
+    if(username == null || username == '' || img == null || img == '') {
+      return '';
+    }
+
+    if(img.includes("person_perfil_vazio")) {
+
+      return img;
+    }
+
+    return `${this.url}/image/carregar/${username}/${img}`;
   }
 
 }

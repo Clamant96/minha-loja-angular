@@ -1,0 +1,88 @@
+label {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+}
+
+label input {
+  width: 100%;
+  /*width: 30% !important;
+  min-width: 490px;*/
+  height: auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px !important;
+
+  border-radius: 2px !important;
+
+  margin: 2% 0%;
+  padding: 2.5%;
+
+  background-color: var(--background-page);
+
+  /*border: 1px solid #ced4da;*/
+
+}
+
+label input[type="file"] {
+  display: none;
+
+}
+
+label .img {
+  margin-right: 5%;
+
+  width: 10%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+label .img svg {
+  width: 100%;
+  height: auto;
+
+}
+
+label strong {
+  width: 200px !important;
+  height: auto;
+
+}
+
+.img-preview-container .alert .ajuste-imagem {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+}
+
+.img-preview-container .alert .ajuste-imagem .imagem-carregada {
+  position: absolute;
+
+  width: 10%;
+  height: auto;
+
+  left: 96%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+}
+
+.img-preview-container .alert .ajuste-imagem .imagem-carregada img {
+  width: 100%;
+  height: auto;
+
+}

@@ -19,6 +19,9 @@ export class HeaderComponent implements OnInit {
   public img: string = environment.img;
   public nome: string = environment.nome;
   public id: number = environment.id;
+  public username: string = environment.username;
+
+  public url: string = environment.apiUrl;
 
   //public totalDeItensCarrinho: number = 0;
 

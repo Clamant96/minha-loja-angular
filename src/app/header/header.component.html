@@ -16,7 +16,7 @@
       <div class="dropdown">
         <div class="carrinho" *ngFor="let carrinho of this.carrinho.listaPedidos">
           <div class="img">
-            <img src="{{carrinho.img}}" alt="{{carrinho.nome}}" />
+            <img src="{{this.url}}/image/carregar/{{this.username}}/{{carrinho.img}}" alt="{{carrinho.nome}}" />
           </div>
           <p>{{this.renderizaTexto(carrinho.nome)}}</p>
           <h3>x {{carrinho.qtdPedidoProduto}}</h3>

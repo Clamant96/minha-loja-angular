@@ -203,14 +203,14 @@ section .lista-produtos {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   flex-wrap: wrap;
 
 }
 
 section .lista-produtos .bloco {
-  margin: 0.8% 0%;
+  margin: 0.8% 0.5%;
 
   width: 24%;
   height: auto;
